@@ -114,46 +114,74 @@ fun PaymentRecivedScuessful(){
                     contentAlignment =  Alignment.Center,
                     modifier = Modifier
                         .fillMaxWidth()
-                        .offset(y = (40).dp)
+                        .offset(y = (100).dp)
                         .padding(start = 22.dp, end = 22.dp)
 //                        .border(1.dp, Color.Blue)
                 ){
 
-                    Image(painter = painterResource(id = R.drawable.sucessful), contentDescription = "Image of raza gold giftcard", Modifier.size(410.dp), contentScale = ContentScale.Fit)
+                    Image(painter = painterResource(id = R.drawable.sucessful), contentDescription = "Image of raza gold giftcard", Modifier.size(120.dp), contentScale = ContentScale.Fit)
                 }
 
 
 //   ::::::::::::::::::::::::::::::: Payment input field ::::::::::::::::::::: \\
 
-//                Spacer(modifier = Modifier.height(11.dp))
+                Spacer(modifier = Modifier.height(131.dp))
+
+                Column(
+                    horizontalAlignment =  Alignment.CenterHorizontally,
+
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(start = 22.dp, end = 22.dp)
+                ){
+                    Text(
+                        "Payment Submitted Successfully",
+                        style = TextStyle(
+                            color = Color.White,
+                            fontWeight = FontWeight.Bold,
+                            fontSize = 18.sp,
+                        )
+
+                    )
+                    Spacer(modifier = Modifier.height(11.dp))
+
+                    Text(
+                        "Asset will be credited within 20min",
+                        style = TextStyle(
+                            color = Color.White,
+                            fontWeight = FontWeight.Light,
+                            fontSize = 14.sp,
+                        )
+                    )
 
 
+                }
 
-//                Button(onClick = { /*TODO*/ },
-//                    colors = ButtonDefaults.buttonColors(
-//                        containerColor =  Color(0xFF1DAEFF),
-//                        contentColor = Color(0XFFFFFFFF)
-//                    ),
-//                    elevation = ButtonDefaults.buttonElevation(
-//                        defaultElevation = 22.dp
-//                    ),
-//                    modifier = Modifier
-//                        .width(180.dp)
-//                        .height(40.dp)
-//                        .offset(x = 100.dp),
-//                    shape = RoundedCornerShape(6.dp)
-//                ) {
-//                    Text(
-//                        "Proceed",
-//                        style = TextStyle(
-//                            color = Color.White,
-//                            fontSize = 18.sp,
-//                            fontWeight = FontWeight.Black,
-//                        ),
-//                        modifier = Modifier
-//
-//                    )
-//                }
+                Button(onClick = { /*TODO*/ },
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor =  Color(0xFF1DAEFF),
+                        contentColor = Color(0XFFFFFFFF)
+                    ),
+                    elevation = ButtonDefaults.buttonElevation(
+                        defaultElevation = 22.dp
+                    ),
+                    modifier = Modifier
+                        .width(180.dp)
+                        .height(40.dp)
+                        .offset(x = 100.dp, y = 243.dp),
+                    shape = RoundedCornerShape(6.dp)
+                ) {
+                    Text(
+                        "To Dashboard",
+                        style = TextStyle(
+                            color = Color.White,
+                            fontSize = 18.sp,
+                            fontWeight = FontWeight.Black,
+                        ),
+                        modifier = Modifier
+
+                    )
+                }
 
 
             }
