@@ -1,9 +1,11 @@
 package com.example.angle
 
+import OnboardScreen.DepositScreen
 import OnboardScreen.DetailedOfSelectedPlan
 import OnboardScreen.PaymenSummary
 import OnboardScreen.PaymentForTag
 import OnboardScreen.PaymentRecivedScuessful
+import OnboardScreen.WithdrawalScreen
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -52,7 +54,10 @@ class MainActivity : ComponentActivity() {
 //                    Offers()
 //                    DetailedOfSelectedPlan()
 //                    PaymentForTag()
-                    PaymentRecivedScuessful()
+//                    PaymentRecivedScuessful()
+                DepositScreen()
+                    WithdrawalScreen()
+
                 }
             }
                 }

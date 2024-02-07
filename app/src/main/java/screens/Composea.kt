@@ -814,6 +814,7 @@ public class Composea {
                         color = Color.White,
                         fontSize = 12.sp,
                         fontWeight = FontWeight(400),
+//                        concept setting
                     ),
                 )
 
@@ -904,4 +905,367 @@ public class Composea {
             }
         }
     }
+
+
+    //   ::::::::::::::::::::::::::::::::::::::::::: Deposit Field using Gift Card ::::::::::::::::::::::::::::::: \\
+
+    @OptIn(ExperimentalMaterial3Api::class)
+    @Composable
+
+    fun DepositFields() {
+        var emailAddress by remember { mutableStateOf("") }
+        var password by remember { mutableStateOf("") }
+        Column(
+            modifier = Modifier
+                .offset(y = -(50).dp)
+                .padding(start = 22.dp, end = 22.dp)
+        ) {
+
+            Text(
+                "Select Offer",
+                style = TextStyle(
+                    color = Color(0xffffffff),
+                    fontSize = 12.sp,
+                    fontStyle = FontStyle.Normal,
+                    fontWeight = FontWeight(700)
+                ),
+                modifier = Modifier
+                    .padding(start = 8.dp)
+            )
+
+            OutlinedTextField(
+                value = password,
+                onValueChange = { password = it },
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .clipToBounds()
+                    .padding(top = 15.dp, end = 22.dp)
+                    .border(
+                        width = 1.dp,
+                        color = Color.White,
+                        shape = RoundedCornerShape(9.dp)
+                    ),
+
+                colors = TextFieldDefaults.textFieldColors(
+                    focusedIndicatorColor = Color.Transparent,
+                    unfocusedIndicatorColor = Color.Transparent,
+                    containerColor = Color.Unspecified
+
+
+                ),
+
+                )
+
+            Spacer(modifier = Modifier.height(18.dp))
+
+            Text(
+                "User ID",
+                style = TextStyle(
+                    color = Color(0xffffffff),
+                    fontSize = 12.sp,
+                    fontStyle = FontStyle.Normal,
+                    fontWeight = FontWeight(700)
+                ),
+                modifier = Modifier
+                    .padding(start = 8.dp)
+            )
+
+            OutlinedTextField(
+                value = password,
+                onValueChange = { password = it },
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .clipToBounds()
+                    .padding(top = 15.dp, end = 22.dp)
+                    .border(
+                        width = 1.dp,
+                        color = Color.White,
+                        shape = RoundedCornerShape(9.dp)
+                    ),
+
+                colors = TextFieldDefaults.textFieldColors(
+                    focusedIndicatorColor = Color.Transparent,
+                    unfocusedIndicatorColor = Color.Transparent,
+                    containerColor = Color.Unspecified
+
+
+                ),
+
+                )
+
+            Spacer(modifier = Modifier.height(18.dp))
+
+            Text(
+                "Card Number",
+                style = TextStyle(
+                    color = Color(0xffffffff),
+                    fontSize = 12.sp,
+                    fontStyle = FontStyle.Normal,
+                    fontWeight = FontWeight(700)
+                ),
+                modifier = Modifier
+                    .padding(start = 8.dp)
+            )
+
+            OutlinedTextField(
+                value = password,
+                onValueChange = { password = it },
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .clipToBounds()
+                    .padding(top = 15.dp, end = 22.dp)
+                    .border(
+                        width = 1.dp,
+                        color = Color.White,
+                        shape = RoundedCornerShape(9.dp)
+                    ),
+
+                colors = TextFieldDefaults.textFieldColors(
+                    focusedIndicatorColor = Color.Transparent,
+                    unfocusedIndicatorColor = Color.Transparent,
+                    containerColor = Color.Unspecified
+
+
+                ),
+
+                )
+            Spacer(modifier = Modifier.height(18.dp))
+
+            Text(
+                "Pin",
+                style = TextStyle(
+                    color = Color(0xffffffff),
+                    fontSize = 12.sp,
+                    fontStyle = FontStyle.Normal,
+                    fontWeight = FontWeight(700)
+                ),
+                modifier = Modifier
+                    .padding(start = 8.dp)
+            )
+
+            OutlinedTextField(
+                value = password,
+                onValueChange = { password = it },
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .clipToBounds()
+                    .padding(top = 15.dp, end = 22.dp)
+                    .border(
+                        width = 1.dp,
+                        color = Color.White,
+                        shape = RoundedCornerShape(9.dp)
+                    ),
+
+                colors = TextFieldDefaults.textFieldColors(
+                    focusedIndicatorColor = Color.Transparent,
+                    unfocusedIndicatorColor = Color.Transparent,
+                    containerColor = Color.Unspecified
+
+
+                ),
+
+                )
+            Spacer(modifier = Modifier.height(18.dp))
+
+            Text(
+                "Upload Card",
+                style = TextStyle(
+                    color = Color(0xffffffff),
+                    fontSize = 12.sp,
+                    fontStyle = FontStyle.Normal,
+                    fontWeight = FontWeight(700)
+                ),
+                modifier = Modifier
+                    .padding(start = 8.dp)
+            )
+
+            OutlinedTextField(
+                value = password,
+                onValueChange = { password = it },
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .clipToBounds()
+                    .padding(top = 15.dp, end = 22.dp)
+                    .border(
+                        width = 1.dp,
+                        color = Color.White,
+                        shape = RoundedCornerShape(9.dp)
+                    ),
+
+                colors = TextFieldDefaults.textFieldColors(
+                    focusedIndicatorColor = Color.Transparent,
+                    unfocusedIndicatorColor = Color.Transparent,
+                    containerColor = Color.Unspecified
+
+
+                ),
+
+                )
+        }
+
+    }
+
+    //   ::::::::::::::::::::::::::::::::::::::::::: Deposit Field using Gift Card ::::::::::::::::::::::::::::::: \\
+
+    @OptIn(ExperimentalMaterial3Api::class)
+    @Composable
+
+    fun WithdrawScreen() {
+        var emailAddress by remember { mutableStateOf("") }
+        var password by remember { mutableStateOf("") }
+        Column(
+            modifier = Modifier
+                .offset(y = -(50).dp)
+                .padding(start = 22.dp, end = 22.dp)
+        ) {
+
+
+
+            Text(
+                "User ID",
+                style = TextStyle(
+                    color = Color(0xffffffff),
+                    fontSize = 12.sp,
+                    fontStyle = FontStyle.Normal,
+                    fontWeight = FontWeight(700)
+                ),
+                modifier = Modifier
+                    .padding(start = 8.dp)
+            )
+
+            OutlinedTextField(
+                value = password,
+                onValueChange = { password = it },
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .clipToBounds()
+                    .padding(top = 15.dp, end = 22.dp)
+                    .border(
+                        width = 1.dp,
+                        color = Color.White,
+                        shape = RoundedCornerShape(9.dp)
+                    ),
+
+                colors = TextFieldDefaults.textFieldColors(
+                    focusedIndicatorColor = Color.Transparent,
+                    unfocusedIndicatorColor = Color.Transparent,
+                    containerColor = Color.Unspecified
+
+
+                ),
+
+                )
+
+            Spacer(modifier = Modifier.height(18.dp))
+
+            Text(
+                "Email Address",
+                style = TextStyle(
+                    color = Color(0xffffffff),
+                    fontSize = 12.sp,
+                    fontStyle = FontStyle.Normal,
+                    fontWeight = FontWeight(700)
+                ),
+                modifier = Modifier
+                    .padding(start = 8.dp)
+            )
+
+            OutlinedTextField(
+                value = password,
+                onValueChange = { password = it },
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .clipToBounds()
+                    .padding(top = 15.dp, end = 22.dp)
+                    .border(
+                        width = 1.dp,
+                        color = Color.White,
+                        shape = RoundedCornerShape(9.dp)
+                    ),
+
+                colors = TextFieldDefaults.textFieldColors(
+                    focusedIndicatorColor = Color.Transparent,
+                    unfocusedIndicatorColor = Color.Transparent,
+                    containerColor = Color.Unspecified
+
+
+                ),
+
+                )
+            Spacer(modifier = Modifier.height(18.dp))
+
+            Text(
+                "Amount",
+                style = TextStyle(
+                    color = Color(0xffffffff),
+                    fontSize = 12.sp,
+                    fontStyle = FontStyle.Normal,
+                    fontWeight = FontWeight(700)
+                ),
+                modifier = Modifier
+                    .padding(start = 8.dp)
+            )
+
+            OutlinedTextField(
+                value = password,
+                onValueChange = { password = it },
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .clipToBounds()
+                    .padding(top = 15.dp, end = 22.dp)
+                    .border(
+                        width = 1.dp,
+                        color = Color.White,
+                        shape = RoundedCornerShape(9.dp)
+                    ),
+
+                colors = TextFieldDefaults.textFieldColors(
+                    focusedIndicatorColor = Color.Transparent,
+                    unfocusedIndicatorColor = Color.Transparent,
+                    containerColor = Color.Unspecified
+
+
+                ),
+
+                )
+            Spacer(modifier = Modifier.height(18.dp))
+
+            Text(
+                "Pin",
+                style = TextStyle(
+                    color = Color(0xffffffff),
+                    fontSize = 12.sp,
+                    fontStyle = FontStyle.Normal,
+                    fontWeight = FontWeight(700)
+                ),
+                modifier = Modifier
+                    .padding(start = 8.dp)
+            )
+
+            OutlinedTextField(
+                value = password,
+                onValueChange = { password = it },
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .clipToBounds()
+                    .padding(top = 15.dp, end = 22.dp)
+                    .border(
+                        width = 1.dp,
+                        color = Color.White,
+                        shape = RoundedCornerShape(9.dp)
+                    ),
+
+                colors = TextFieldDefaults.textFieldColors(
+                    focusedIndicatorColor = Color.Transparent,
+                    unfocusedIndicatorColor = Color.Transparent,
+                    containerColor = Color.Unspecified
+
+
+                ),
+
+                )
+        }
+
+    }
+
 }
